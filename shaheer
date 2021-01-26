@@ -1,0 +1,50 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main (){
+	string a;
+	while (true)
+	{	
+	wapas:
+	int num1, num2;
+	cout << "Enter 1st num: \n";
+	cin >> num1;
+	cout << "Enter 2nd num: \n";
+	cin >> num2;
+	cout << "press a to addition: \n";
+	cout << "press b to subtraction: \n";	
+	cout << "press c to multiplication: \n";
+	cout << "press d to division: \n";
+	cout << "press e to reminder: \n";	
+	cin >> a;
+	
+	if (a=="a")
+	cout << "The Sum = " << num1 + num2 <<endl;
+	
+	else if (a=="b")
+	cout << "The Subrtract = " << num1 - num2 <<endl;
+		
+	else if (a=="c")
+	cout << "The Multiply = " << num1 * num2 <<endl;
+	
+	else if (a=="d")
+	cout << "The Divide = " << num1 / num2 << endl;
+	
+	else if (a=="e")
+	cout << "The  Reminder = " << num1 % num2 << endl;
+	
+		
+	else 
+	cout << "! invalid operation !" << endl;
+	getch ();
+	system ("cls");
+	
+	goto wapas;
+	
+}
+
+			
+	return 0;
+}
